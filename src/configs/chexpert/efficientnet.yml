@@ -1,0 +1,16 @@
+SEED: 42
+USE_AMP: False
+VERBOSE: True
+PATHS:
+  SHARD_ROOT: /scratch/work/brazzan1/chexpert
+  EXPERIMENT_NAME: "efficientnet-simclr-chexpert"
+  OUT_DIR: ../experiments
+TRAIN:
+  IMG_SIZE: 256
+  LR: 1e-4
+  BATCH_SIZE: 32
+  N_EPOCHS: 20
+  WEIGHT_DECAY: 0.0
+  MODEL_NAME: efficientnet
+  MODEL_SAVE_PATH: ../saved_models/efficientnet
+  NUM_WORKERS: 4

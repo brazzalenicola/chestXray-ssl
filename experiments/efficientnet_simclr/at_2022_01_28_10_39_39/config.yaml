@@ -1,0 +1,31 @@
+CFG_DEST: config.yaml
+DEVICE: cuda
+N_TRAIN: null
+PATHS:
+  DATAFILE: ''
+  EXPERIMENT_DESC: ''
+  EXPERIMENT_NAME: efficientnet_simclr
+  MODEL_OUT_DIR: ../saved_models/experiments/efficientnet_simclr/at_2022_01_28_10_39_39/saved_models
+  OUT_DIR: ../experiments/efficientnet_simclr/at_2022_01_28_10_39_39
+  PRETRAINED_TRANSFORMER_FILE: ''
+  RESULTS_LOG_FILENAME: results.csv
+  SHARD_ROOT: /scratch/work/brazzan1/chexpert
+  TB_OUT_DIR: ../experiments/efficientnet_simclr/at_2022_01_28_10_39_39/tb_logs
+  TIMESTAMP: at_2022_01_28_10_39_39
+SEED: 42
+TRAIN:
+  ACCU_GRAD_STEPS: 1
+  BATCH_SIZE: 128
+  ES_THRESH: 3
+  GRAD_CLIP: 1.0
+  IMG_SIZE: 256
+  LR: 0.0005
+  MODEL_NAME: efficientnet_simclr
+  MODEL_SAVE_PATH: ../saved_models/efficientnet_simclr
+  NUM_WORKERS: 4
+  N_EPOCHS: 20
+  N_FOLDS: 3
+  VALID_STEP: 10
+  WEIGHT_DECAY: 0.0001
+USE_AMP: false
+VERBOSE: true

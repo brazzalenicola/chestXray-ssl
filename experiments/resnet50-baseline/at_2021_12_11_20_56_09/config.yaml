@@ -1,0 +1,31 @@
+CFG_DEST: config.yaml
+DEVICE: cuda
+N_TRAIN: null
+PATHS:
+  DATAFILE: ''
+  EXPERIMENT_DESC: ''
+  EXPERIMENT_NAME: resnet50-baseline
+  MODEL_OUT_DIR: ../saved_models/experiments/resnet50-baseline/at_2021_12_11_20_56_09/saved_models
+  OUT_DIR: ../experiments/resnet50-baseline/at_2021_12_11_20_56_09
+  PRETRAINED_TRANSFORMER_FILE: ''
+  RESULTS_LOG_FILENAME: results.csv
+  SHARD_ROOT: /l/Work/aalto/chest-xray-ssl/input/chexpert-shards
+  TB_OUT_DIR: ../experiments/resnet50-baseline/at_2021_12_11_20_56_09/tb_logs
+  TIMESTAMP: at_2021_12_11_20_56_09
+SEED: 42
+TRAIN:
+  ACCU_GRAD_STEPS: 1
+  BATCH_SIZE: 32
+  ES_THRESH: 3
+  GRAD_CLIP: 1.0
+  IMG_SIZE: 128
+  LR: 0.0001
+  MODEL_NAME: resnet50
+  MODEL_SAVE_PATH: ../saved_models/resnet50
+  NUM_WORKERS: 4
+  N_EPOCHS: 3
+  N_FOLDS: 3
+  VALID_STEP: 10
+  WEIGHT_DECAY: 0.0
+USE_AMP: false
+VERBOSE: true
